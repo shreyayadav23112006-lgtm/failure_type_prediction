@@ -15,7 +15,7 @@ import streamlit as st
 
 # failure_type_prediction.pkl
 
-model = joblib.load('failure_typr_prediction.pkl')
+model = joblib.load('failure_type_prediction.pkl')
 
 st.set_page_config(page_title="failure Type classification",layout="centered")
 st.title("failure Type  classification App")
