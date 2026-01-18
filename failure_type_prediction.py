@@ -31,7 +31,6 @@ VOC = st.number_input("value of VOC",value=None)
 RP = st.number_input("value of total RP",value=None)
 IP = st.number_input("value of IP",value=None)
 Temperature = st.number_input("value of Temperature",value=None)
-fail = st.number_input("value of fail",value=None)
 
 if st.button("predict"):
   input_data = np.array([[footfall,
@@ -42,8 +41,7 @@ if st.button("predict"):
                           VOC,
                           RP,
                           IP,
-                          Temperature,
-                          fail
+                          Temperature
                     ]])
   prediction = model.predict(input_data)[0]
   if prediction == 0:
